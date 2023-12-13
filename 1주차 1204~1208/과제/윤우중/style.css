@@ -1,0 +1,122 @@
+:root {
+  font-family: sans-serif;
+}
+/* 루트 폰트설정  */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*  기본 값 초기화  */
+
+body {
+  background-image: url(./images/space.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(34, 33, 33);
+  color: #fff;
+  box-sizing: border-box;
+}
+/* 벡그라운드 이미지 설정 , 부모와 무관하게 높이를 100vh로 설정  반복 x , 이미지 커버로 설정 */
+
+.container {
+  width: 800px;
+  margin: 20px auto;
+}
+
+/* 모든 요소를 감싸는 contents 의 내용은 container div 안에 존재  가운데 정렬 & 가로 값 지정*/
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+/* header  프로필 이미지와 간단소개를 관리하는 공간 텍스트 가운데 정렬 */
+
+.header img {
+  width: 200px;
+  border-radius: 30% 70% 70% 30% / 22% 100% 0% 78%;
+}
+
+/* 배운 내용을 활용해 이미지를 담는 공간에 border-radius를 border-genator 사용 */
+
+.header h1 {
+  font-size: 35px;
+  padding: 20px;
+}
+/* 대표글 폰트설정 밑 내부여백 부여 */
+
+.header p {
+  /* background-color: black; */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+/* 한줄소개  */
+
+.main {
+  /* background-color: red; */
+}
+
+.content {
+  padding-left: 15px;
+  padding-top: 20px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: black;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* about , skills 를 관리 하는 영역 패딩 값을 줘 배치 opacity 를 부여해 뒤에 배경이 사라지지 않도록 투명도를 줌 */
+
+.content a {
+  text-decoration: none;
+  color: inherit;
+}
+/*  링크 이동을 위한 a 태그 컬러는 기본 값을 대체하기 위해 상속받아 사용 데코레이션을 없애줘 a 의 기본설정을 초기화  */
+
+.content a:hover:after {
+  content: " →";
+}
+
+/* 가상요소를 a 마우스 호버 시 화살표가 보이게 해주고 마우스를 올리면 커서모양이 변하도록 설정 */
+
+.content ul {
+  font-size: 21px;
+  padding: 10px;
+}
+/* content 안의 모든 내용은 ul 태그 안에 작성됨 */
+
+.content ul li {
+  padding: 8px;
+  background-image: url(./images/freeicon1.png);
+  background-size: contain;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  color: #5a5674;
+}
+/* 아이콘 사용  */
+.content li:hover {
+  padding: 8px;
+  background-image: url(./images/freeincon2.png);
+  background-size: contain;
+  background-position: 0px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.content ul li p {
+  margin-left: 50px;
+}
+
+/* foonter  */
+.footer {
+  /* background-color: yellowgreen; */
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+}

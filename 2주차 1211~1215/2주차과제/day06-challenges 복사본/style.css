@@ -1,0 +1,26 @@
+:root {
+  font-family: "arial";
+}
+body {
+  margin: unset;
+  /* background-image: url(./images/bg.png); */
+}
+
+.container {
+  width: 1000px;
+  box-shadow: inset 0px 0px 20px red;
+  margin: 50px auto;
+  display: flex;
+  height: 400px;
+}
+
+.sidebar {
+  box-shadow: inset 0px 0px 20px blue;
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+.main {
+  box-shadow: inset 0px 0px 20px orange;
+  flex-grow: 1;
+  padding: 40px;
+}

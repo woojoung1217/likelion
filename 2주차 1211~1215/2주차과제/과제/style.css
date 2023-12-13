@@ -1,0 +1,47 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 120px auto;
+}
+
+.content {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: green !important;
+}
+.cola {
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  line-height: 200px;
+  border-radius: 100px;
+  margin: 20px;
+  transition: 0.7s;
+  box-shadow: rgb(164, 161, 158) 10px 0px 10px 10px;
+}
+
+.first:hover {
+  background-image: url(./images/space.jpg);
+  background-size: cover;
+  background-position: right;
+  transform: rotate(360deg);
+  color: aliceblue;
+  box-shadow: none;
+}
+
+.second:hover {
+  background-color: yellowgreen;
+  transform: rotate(360deg);
+}
+.third:hover {
+  background-color: skyblue;
+  transform: rotate(360deg);
+} */
+.wrapper {
+  background-color: red;
+}
